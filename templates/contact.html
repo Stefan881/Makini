@@ -13,6 +13,15 @@
       </div>
     </div><!-- End Breadcrumbs -->
 
+
+    {% if message_name %}
+    <center>
+        <h2>Thanks {{ message_name }}!</h2>
+        <p>We received your email and will respond shortly...</p>
+    </center>
+    <br/><br/><br/>
+    {% else %}
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div data-aos="fade-up">
@@ -95,7 +104,7 @@
 
       </div>
     </section><!-- End Contact Section -->
-
+    {% endif %}
   </main><!-- End #main -->
 
 {%  endblock %}
